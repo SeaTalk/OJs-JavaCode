@@ -33,12 +33,12 @@ public class NewCalculater {
         while (sc.hasNext()) {
             n = sc.nextInt();
             List<Integer> list = getPrims(n);
-            if(list==null)continue;
+            if(list==null)return;
             for(int i=0;i<5;i++){
-                int j=0;
+                int j=0; 
                 for(int a : list){
                     if(j!=0){
-                        if(i==2)System.out.print("*");
+                        if(i==2)System.out.print("*"); 
                         else System.out.print(" ");
                     }
                     ++j;

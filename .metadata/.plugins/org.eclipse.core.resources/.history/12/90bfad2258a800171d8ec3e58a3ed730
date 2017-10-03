@@ -1,0 +1,51 @@
+import java.util.Arrays;
+
+public class ZigZagConversion {
+	static int layer = 0;
+	private static int calcOnce(int i){
+		if(i==0)return 0;
+		layer++;
+        if(i<=2)return i;
+        else return i + calcOnce(i-2);
+    }
+    public static String convert(String s, int numRows) {
+        int len = s.length();
+        if(len<=numRows || numRows==1)return s;
+        int counts[] = new int[numRows];
+        layer=0;
+        int once = calcOnce(numRows);
+        int gap = len/once;
+        if(len%once != 0)gap++;
+        char ochar[][] = new char[numRows][gap*layer];
+        int curRow = 0, dirction = 0;// up->down:0, down->up:1
+        for(int i=0;i<len;++i){
+        	ochar[curRow][counts[curRow]] = s.charAt(i);
+        	counts[curRow]++;
+        	switch(dirction){
+        	case 0:
+        		curRow++;
+        		if(curRow==numRows){
+        			curRow -= 2;
+        			dirction = 1;
+        		}break;
+        	case 1:	
+        		curRow--;
+        		if(curRow<0){
+        			curRow += 2;
+        			dirction = 0;
+        		}
+        	}
+        }
+        StringBuffer sb = new StringBuffer();
+        for(int i=0;i<numRows;++i){
+        	sb.append(Arrays.copyOfRange(ochar[i], 0, counts[i]));
+        }
+        return sb.toString();
+    }
+
+	public static void main(String[] args) {
+		System.out.println(convert("aabbccddeeff",1));
+
+	}
+
+}

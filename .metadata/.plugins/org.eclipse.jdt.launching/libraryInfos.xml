@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+<libraryInfo home="D:\Java\jdk1.8.0_40" version="1.8.0_40">
+<bootpath>
+<entry path="D:\Java\jdk1.8.0_40\lib\resources.jar"/>
+<entry path="D:\Java\jdk1.8.0_40\lib\rt.jar"/>
+<entry path="D:\Java\jdk1.8.0_40\lib\sunrsasign.jar"/>
+<entry path="D:\Java\jdk1.8.0_40\lib\jsse.jar"/>
+<entry path="D:\Java\jdk1.8.0_40\lib\jce.jar"/>
+<entry path="D:\Java\jdk1.8.0_40\lib\charsets.jar"/>
+<entry path="D:\Java\jdk1.8.0_40\lib\jfr.jar"/>
+<entry path="D:\Java\jdk1.8.0_40\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\Java\jdk1.8.0_40\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\Java\jdk1.8.0_40\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\Java\jdk1.7.0_06" version="1.7.0_06">
+<bootpath>
+<entry path="D:\Java\jdk1.7.0_06\jre\lib\resources.jar"/>
+<entry path="D:\Java\jdk1.7.0_06\jre\lib\rt.jar"/>
+<entry path="D:\Java\jdk1.7.0_06\jre\lib\sunrsasign.jar"/>
+<entry path="D:\Java\jdk1.7.0_06\jre\lib\jsse.jar"/>
+<entry path="D:\Java\jdk1.7.0_06\jre\lib\jce.jar"/>
+<entry path="D:\Java\jdk1.7.0_06\jre\lib\charsets.jar"/>
+<entry path="D:\Java\jdk1.7.0_06\jre\lib\jfr.jar"/>
+<entry path="D:\Java\jdk1.7.0_06\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\Java\jdk1.7.0_06\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\Java\jdk1.7.0_06\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="C:\Program Files\Java\jre1.8.0_92" version="1.8.0_92">
 <bootpath>
 <entry path="C:\Program Files\Java\jre1.8.0_92\lib\resources.jar"/>

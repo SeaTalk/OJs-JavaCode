@@ -1,0 +1,32 @@
+
+public class ZigZagConversion {
+	
+	private static int calcOnce(int i){
+        if(i<=2)return i;
+        else return 2 + calcOnce(i-2);
+    }
+    public static String convert(String s, int numRows) {
+        int len = s.length();
+        if(len<=numRows)return s;
+        char ochar[] = new char[len];
+        int once = calcOnce(numRows);
+        int gap = len/once;
+        if(len%once != 0)gap++;
+        int tmp = 0, offset = 0;
+        for(int i=0;i<len;++i){
+            if(tmp==gap){
+                tmp=0;
+                offset++;
+            }
+            ochar[once*tmp+offset] = s.charAt(i);
+            tmp++;
+        }
+        return new String(ochar);
+    }
+
+	public static void main(String[] args) {
+		System.out.println(convert("aabbccddeeff",4));
+
+	}
+
+}
