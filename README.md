@@ -35,7 +35,7 @@ Returns:	int
 Method signature:	int maxDonations(int[] donations)
 (be sure your method is public)
     
- 
+  
 Constraints
 -	donations contains between 2 and 40 elements, inclusive.
 -	Each element in donations is between 1 and 1000, inclusive.
@@ -60,3 +60,19 @@ Find the contiguous subarray within an array
  (containing at least one number) which has the largest sum.
  For example, given the array [-2,1,-3,4,-1,2,1,-5,4],
  the contiguous subarray [4,-1,2,1] has the largest sum = 6.
+
+### 5. Regular Expressing Matching
+Implement regular expression matching with support for '.' and '*'.
+> '.' Matches any single character.<br>
+> '\*' Matches zero or more of the preceding element.<br><br>
+> The matching should cover the entire input string (not partial).<br><br>
+> The function prototype should be:<br>
+> bool isMatch(const char *s, const char *p)<br><br>
+Some examples:<br>
+isMatch("aa","a") → false<br>
+isMatch("aa","aa") → true<br>
+isMatch("aaa","aa") → false<br>
+isMatch("aa", "a*") → true<br>
+isMatch("aa", ".*") → true<br>
+isMatch("ab", ".*") → true<br>
+isMatch("aab", "c*a*b") → true
