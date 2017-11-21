@@ -8,8 +8,8 @@
             "type": "java",
             "name": "Debug (Launch)",
             "request": "launch",
-            "mainClass": "NewCalculater",
-            "args": ""
+            "mainClass": "RegExpMatching",
+            "args": "-cp ./Solutions/bin"
         },
         {
             "type": "java",
